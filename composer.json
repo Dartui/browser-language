@@ -1,0 +1,28 @@
+{
+    "name": "dartui/browser-language",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Krzysztof Grabania",
+            "email": "krzysztof@grabania.pl"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^0.12.83"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dartui\\BrowserLanguage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
