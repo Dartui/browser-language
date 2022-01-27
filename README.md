@@ -6,7 +6,7 @@ Detect languages supported by user browser in PHP.
 
 While requesting for data, browsers are sending `Accept-Language` header to server. It contains information about which language user can understand. We can use this value to serve content for users with their preferred language automatically.
 
-Unfourunately, `Accept-Language` header is a bit complicated and needs parsing. That is the reason why you may need this package.
+Unfortunately, `Accept-Language` header is a bit complicated and needs parsing. That is the reason why you may need this package.
 
 ## Installation
 
