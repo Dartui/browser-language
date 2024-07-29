@@ -51,7 +51,7 @@ class Language
      */
     public static function fromString(string $locale, int $order = 1): Language
     {
-        $pattern = '/^\s*(?P<name>\*|[a-zA-Z\-]+)(?:;q=(?P<factor>1|0.\d+))?\s*$/';
+        $pattern = '/^\s*(?P<name>\*|[a-zA-Z]+(-[a-zA-Z0-9]+)?)(?:;q=(?P<factor>1|0.\d+))?\s*$/';
 
         preg_match($pattern, $locale, $matches);
 
