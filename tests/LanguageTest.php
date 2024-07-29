@@ -35,6 +35,13 @@ class LanguageTest extends TestCase
         $this->assertSame(0.2, $language->getFactor());
     }
 
+    public function test_if_parses_ietf_m49_codes(): void
+    {
+        $language = Language::fromString('es-419');
+
+        $this->assertSame('es-419', $language->getName());
+    }
+
     public function test_if_throws_exception_for_invalid_string(): void
     {
         $this->expectException(InvalidArgumentException::class);
